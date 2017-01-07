@@ -1,7 +1,4 @@
 # Unix
-alias ll="ls -al"
-alias ln="ln -v"
-alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
@@ -9,11 +6,95 @@ alias v="$VISUAL"
 alias b="bundle"
 
 # Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
 
 # Pretty print the path
-alias path='echo $PATH | tr -s ":" "\n"'
+alias path="echo $PATH | tr -s ":" "\n""
+
+# JM imported
+alias s="ssh"
+alias gc="cd ~/code"
+alias gj="cd ~/playground/jormon.github.io"
+alias gd="cd ~/Desktop"
+alias gw="cd ~/code/legno/woodnote"
+alias gplay="cd ~/playground"
+alias gair="cd ~/playground/airlines"
+alias gu="cd ~/playground/upcase"
+alias gsse="cd ~/playground/spree_simple_export"
+alias gss="cd ~/playground/spree-subscribe"
+alias gtail="cd ~/playground/gltail"
+alias gios="cd /Users/jormon/code/ios"
+alias proxy="ssh -D 8080 harlequinduck.dreamhost.com"
+alias tpb="tsocks pianobar"
+alias bers="bundle exec rspec spec/"
+alias rc="rails c -s" # sandboxed rails console
+alias ber="bundle exec rake"
+alias be="bundle exec"
+alias bec="bundle exec cap"
+alias killdns="sudo killall -HUP mDNSResponder"
+alias gemset="echo `basename $PWD` > .ruby-gemset"
+
+# Marker
+alias gpm="cd ~/code/marker/rails"
+alias grn="cd ~/code/marker/react-native"
+alias gpd="cd /Volumes/marker/dashing"
+alias gmapi="cd /Volumes/marker/marker-api"
+alias gms="cd /Volumes/marker/marker-static"
+alias gmapp="cd /Volumes/marker/places.old"
+alias gn="cd ~/code/near"
+alias prodc="h run -a marker-production rails c production"
+alias msc="h run -a marker-sandbox rails c staging"
+# run solr in the foreground
+alias solr="rake sunspot:solr:run"
+
+
+# basehax
+alias gsw="cd /Users/jormon/code/soundable-web"
+alias gsi="cd /Users/jormon/code/soundable-ios"
+
+# other stuff!
+alias gk="cd ~/code/kulikulibar/"
+alias gkkd="cd ~/code/kulikuli-dashing/"
+alias gkks="cd ~/code/kulikuli-spree/"
+alias gkn="cd /Users/jormon/code/kulikuli/nutritionals"
+alias gphm="git push heroku master"
+alias h="heroku"
+alias kprodc="h run -a kulikulibar rails c production"
+alias stagec="h run -a kulikuli-staging rails c staging"
+alias bocheck="h run -a kulikulibar rake backorders:count"
+
+alias sql="psql -h 127.0.0.1 -p 5432 postgres postgres"
+
+alias kkb_pg_pull="h pg:pull -a kulikuli-staging HEROKU_POSTGRESQL_ROSE kulikuli_staging"
+alias kkb_pg_pull_prod="h pg:pull -a kulikulibar HEROKU_POSTGRESQL_WHITE kulikuli_staging"
+alias mp_pg_pull="dropdb places_dev; h pg:pull -a marker-production HEROKU_POSTGRESQL_COBALT places_dev"
+alias ms_pg_pull="dropdb places_dev; h pg:pull -a marker-sandbox HEROKU_POSTGRESQL_CYAN places_dev"
+alias sw_pg_pull="dropdb soundable_web_dev; h pg:pull -a soundable-prod HEROKU_POSTGRESQL_BROWN soundable_web_dev"
+
+# marker database dumping
+alias dumpm="pg_dump -C -O places_dev > tmp/places.dump"
+alias rdumpm="dropdb places_dev && createdb places_dev && psql < tmp/places.dump"
+# follow by path to pgdump file from heroku
+alias pulllocal="pg_restore --verbose --clean --no-acl --no-owner -d places_dev"
+
+# kk database dumping
+alias kdump="pg_dump -C -O kulikuli_staging > tmp/kk_alias.dump"
+alias krdump="dropdb kulikuli_staging && createdb kulikuli_staging && psql < tmp/kk_alias.dump"
+
+# kk staging database push
+alias kstagedb="h pg:push -a kulikuli-staging kulikuli_staging HEROKU_POSTGRESQL_ROSE"
+
+# kk log tailing
+alias kplog="h logs -t -a kulikulibar"
+alias kslog="h logs -t -a kulikuli-staging"
+
+# marker log tailing
+alias mplog="h logs -t -a marker-production"
+alias mslog="h logs -t -a marker-sandbox"
+alias mdlog="h logs -t -a marker-dashing"
+alias bo="EDITOR=atom bundle open"
+
+
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
