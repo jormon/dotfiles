@@ -13,6 +13,7 @@ alias path="echo $PATH | tr -s ":" "\n""
 
 # JM imported
 alias s="ssh"
+alias ann="annotate"
 alias gc="cd ~/code"
 alias gj="cd ~/playground/jormon.github.io"
 alias gd="cd ~/Desktop"

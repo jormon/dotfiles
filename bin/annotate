@@ -1,0 +1,11 @@
+#!/bin/bash
+
+file=".git/COMMIT_TO_ANNOTATE"
+
+git show --format=%B -s > $file
+
+echo "$1" >> $file
+
+git commit --amend -F $file
+
+rm $file
