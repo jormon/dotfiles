@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+if `git fetch`
+  if ARGV[0] == "-i"
+    system "git rebase -i origin/master"
+  else
+    `git rebase origin/master`
+  end
+end

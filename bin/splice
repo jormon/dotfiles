@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+set -x
+
+commit_to_cherry=`git rev-parse HEAD`
+
+git reset --hard HEAD^
+git co -b $1 master
+git cherry-pick $commit_to_cherry

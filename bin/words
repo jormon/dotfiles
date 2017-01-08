@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/usr/local/bin/gsort -R /usr/share/dict/words | head -100
