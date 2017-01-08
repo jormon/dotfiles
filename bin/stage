@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+set -x
+
+branch_to_stage=`git symbolic-ref --short HEAD`
+
+if [[ "$1" == "-f" ]]; then
+  git push -f origin $branch_to_stage:staging
+else
+  git push origin $branch_to_stage:staging
+fi
+
