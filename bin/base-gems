@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# A script that installs the basic set of gems needed in all environments.
+
 gems=('bundler' 'haml-lint')
 
 for gem in $gems; do
