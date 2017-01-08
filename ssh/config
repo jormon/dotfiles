@@ -1,0 +1,13 @@
+ForwardAgent yes
+#UseRoaming no
+
+Host jormon
+Hostname harlequinduck.dreamhost.com
+User jormon
+
+Host kuliblog
+Hostname jeff-davis.dreamhost.com
+User kulikuliblog
+
+Host stanford
+Hostname xenon.stanford.edu
