@@ -12,7 +12,6 @@ alias s="rspec"
 alias path="echo $PATH | tr -s ":" "\n""
 
 # JM imported
-alias s="ssh"
 alias ann="annotate"
 alias gc="cd ~/code"
 alias gj="cd ~/playground/jormon.github.io"
