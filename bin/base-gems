@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+gems=('bundler' 'haml-lint')
+
+for gem in $gems; do
+  bundle install $gem;
+done
