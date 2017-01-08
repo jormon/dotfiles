@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gsort -R ~/Documents/stations.txt | head -1

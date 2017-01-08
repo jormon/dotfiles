@@ -1,0 +1,12 @@
+brew bundle --file=- <<EOF
+brew "memcached"
+brew "ffmpeg"
+brew "awscli"
+brew "watch"
+brew "sloccount"
+brew "swiftlint"
+brew "coreutils"
+EOF
+
+gem_install_or_update bundler
+
