@@ -4,6 +4,8 @@
 
 gems=('bundler' 'haml-lint')
 
+gem install bundler
+
 for gem in $gems; do
   bundle install $gem;
 done
