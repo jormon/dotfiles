@@ -30,6 +30,6 @@ else
     else
       system "hub pull-request"
     end
-    `2r` if success
+    `git br -m @#{branch_name}` if success
   end
 end
