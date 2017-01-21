@@ -14,6 +14,20 @@ set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 
+
+" JM settings!
+" remap jj to escape quickly
+imap jj <esc>
+imap jk <esc>
+imap kj <esc>
+
+" scroll through multi-line input
+nmap k gk
+nmap j gj
+
+" Quick sourcing of the current file, allowing for quick vimrc testing
+nnoremap <leader>sop :source %<cr>
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
