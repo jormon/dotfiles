@@ -16,14 +16,24 @@ set autowrite     " Automatically :write before running commands
 
 
 " JM settings!
+
+" better 0 behavior
+nmap 0 ^
+
 " remap jj to escape quickly
-imap jj <esc>
-imap jk <esc>
-imap kj <esc>
+imap jj <esc>:w<cr>
+imap jk <esc>:w<cr>
+imap kj <esc>:w<cr>
 
 " scroll through multi-line input
 nmap k gk
 nmap j gj
+
+nmap <leader>vr :sp $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
 
 " Quick sourcing of the current file, allowing for quick vimrc testing
 nnoremap <leader>sop :source %<cr>
