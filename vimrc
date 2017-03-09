@@ -32,6 +32,10 @@ nmap j gj
 nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
 
+" highlight search termsnavbar_typeahead_controller
+set hlsearch
+noremap <silent> <Esc><Esc> <Esc>:noh<CR><Esc>
+
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
