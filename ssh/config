@@ -1,6 +1,12 @@
 ForwardAgent yes
 #UseRoaming no
 
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/id_ed25519
+
 Host jormon
 Hostname harlequinduck.dreamhost.com
 User jormon
