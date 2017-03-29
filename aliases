@@ -14,6 +14,7 @@ alias path="echo $PATH | tr -s ":" "\n""
 # JM imported
 alias ann="annotate"
 alias gc="cd ~/code"
+alias gme="cd ~/code/marker/marker-expo"
 alias gj="cd ~/playground/jormon.github.io"
 alias gd="cd ~/Desktop"
 alias gw="cd ~/code/legno/woodnote"
@@ -73,7 +74,7 @@ alias sw_pg_pull="dropdb soundable_web_dev; h pg:pull -a soundable-prod HEROKU_P
 
 # marker database dumping
 alias dumpm="pg_dump -C -O places_dev > tmp/places.dump"
-alias rdumpm="dropdb places_dev && createdb places_dev && psql < tmp/places.dump"
+alias rdumpm="dropdb places_dev && createdb places_dev && psql places_dev < tmp/places.dump"
 # follow by path to pgdump file from heroku
 alias pulllocal="pg_restore --verbose --clean --no-acl --no-owner -d places_dev"
 
