@@ -80,7 +80,7 @@ alias pulllocal="pg_restore --verbose --clean --no-acl --no-owner -d places_dev"
 
 # kk database dumping
 alias kdump="pg_dump -C -O kulikuli_staging > tmp/kk_alias.dump"
-alias krdump="dropdb kulikuli_staging && createdb kulikuli_staging && time psql < tmp/kk_alias.dump"
+alias krdump="dropdb kulikuli_staging && createdb kulikuli_staging && time psql kulikuli_staging < tmp/kk_alias.dump"
 
 # kk staging database push
 alias kstagedb="h pg:push -a kulikuli-staging kulikuli_staging HEROKU_POSTGRESQL_ROSE"
