@@ -74,13 +74,13 @@ alias sw_pg_pull="dropdb soundable_web_dev; h pg:pull -a soundable-prod HEROKU_P
 
 # marker database dumping
 alias dumpm="pg_dump -C -O places_dev > tmp/places.dump"
-alias rdumpm="dropdb places_dev && createdb places_dev && psql places_dev < tmp/places.dump"
+alias rdumpm="dropdb places_dev && createdb places_dev && time psql places_dev < tmp/places.dump"
 # follow by path to pgdump file from heroku
 alias pulllocal="pg_restore --verbose --clean --no-acl --no-owner -d places_dev"
 
 # kk database dumping
 alias kdump="pg_dump -C -O kulikuli_staging > tmp/kk_alias.dump"
-alias krdump="dropdb kulikuli_staging && createdb kulikuli_staging && psql < tmp/kk_alias.dump"
+alias krdump="dropdb kulikuli_staging && createdb kulikuli_staging && time psql < tmp/kk_alias.dump"
 
 # kk staging database push
 alias kstagedb="h pg:push -a kulikuli-staging kulikuli_staging HEROKU_POSTGRESQL_ROSE"
