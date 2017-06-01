@@ -95,6 +95,9 @@ alias mslog="h logs -t -a marker-sandbox"
 alias mdlog="h logs -t -a marker-dashing"
 alias bo="EDITOR=atom bundle open"
 
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 
 
 # Include custom aliases
