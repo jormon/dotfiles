@@ -34,6 +34,7 @@ alias be="bundle exec"
 alias bec="bundle exec cap"
 alias killdns="sudo killall -HUP mDNSResponder"
 alias gemset="echo `basename $PWD` > .ruby-gemset"
+alias fixsshkey="ssh-add -A"
 
 # Marker
 alias gpm="cd ~/code/marker/rails"
@@ -67,7 +68,7 @@ alias bocheck="h run -a kulikulibar rake backorders:count"
 alias sql="psql -h 127.0.0.1 -p 5432 postgres postgres"
 
 alias kkb_pg_pull="h pg:pull -a kulikuli-staging HEROKU_POSTGRESQL_ROSE kulikuli_staging"
-alias kkb_pg_pull_prod="h pg:pull -a kulikulibar HEROKU_POSTGRESQL_WHITE kulikuli_staging"
+alias kkb_pg_pull_prod="time h pg:pull -a kulikulibar HEROKU_POSTGRESQL_WHITE kulikuli_staging"
 alias mp_pg_pull="dropdb places_dev && h pg:pull -a marker-production HEROKU_POSTGRESQL_COBALT places_dev"
 alias ms_pg_pull="dropdb places_dev && h pg:pull -a marker-sandbox HEROKU_POSTGRESQL_CYAN places_dev"
 alias sw_pg_pull="dropdb soundable_web_dev; h pg:pull -a soundable-prod HEROKU_POSTGRESQL_BROWN soundable_web_dev"
