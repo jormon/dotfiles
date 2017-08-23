@@ -6,6 +6,8 @@ brew "watch"
 brew "sloccount"
 brew "swiftlint"
 brew "coreutils"
+brew "translate-shell"
+brew "youtube-dl"
 EOF
 
 gem_install_or_update bundler
