@@ -12,3 +12,5 @@ EOF
 
 gem_install_or_update bundler
 
+# fix pow exceptions
+# https://gist.github.com/RobinDaugherty/2731f20d303e6506d451384df2189210
