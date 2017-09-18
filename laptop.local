@@ -8,6 +8,7 @@ brew "swiftlint"
 brew "coreutils"
 brew "translate-shell"
 brew "youtube-dl"
+brew "jq"
 EOF
 
 gem_install_or_update bundler
