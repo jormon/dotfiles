@@ -64,6 +64,8 @@ alias h="heroku"
 alias kprodc="h run -a kulikulibar rails c production"
 alias stagec="h run -a kulikuli-staging rails c staging"
 alias bocheck="h run -a kulikulibar rake backorders:count"
+# make a random password
+alias pass="openssl rand -base64 32"
 
 alias sql="psql -h 127.0.0.1 -p 5432 postgres postgres"
 
