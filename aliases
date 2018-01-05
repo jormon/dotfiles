@@ -76,7 +76,7 @@ alias ms_pg_pull="dropdb places_dev && h pg:pull -a marker-sandbox HEROKU_POSTGR
 alias sw_pg_pull="dropdb soundable_web_dev; h pg:pull -a soundable-prod HEROKU_POSTGRESQL_BROWN soundable_web_dev"
 
 # marker staging database copy from prod
-alias mstagedb="heroku pg:copy marker-production::COBALT HEROKU_POSTGRESQL_CYAN -a marker-sandbox"
+#alias mcopydb="heroku pg:copy HEROKU_POSTGRESQL_COBALT_URL HEROKU_POSTGRESQL_CYAN -a marker-sandbox"
 
 # marker database dumping
 alias dumpm="pg_dump -C -O places_dev > tmp/places.dump"
