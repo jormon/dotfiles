@@ -35,6 +35,7 @@ alias bec="bundle exec cap"
 alias killdns="sudo killall -HUP mDNSResponder"
 alias gemset="echo `basename $PWD` > .ruby-gemset"
 alias fixsshkey="ssh-add -A"
+alias mc_clear="echo 'flush_all' | nc -w 2 localhost 11211"
 
 # Marker
 alias gpm="cd ~/code/marker/rails"
