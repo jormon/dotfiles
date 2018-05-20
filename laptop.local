@@ -9,6 +9,7 @@ brew "coreutils"
 brew "translate-shell"
 brew "youtube-dl"
 brew "jq"
+brew "heroku/brew/heroku"
 EOF
 
 gem_install_or_update bundler
