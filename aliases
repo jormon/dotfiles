@@ -39,7 +39,7 @@ alias fixsshkey="ssh-add -A"
 alias mc_clear="echo 'flush_all' | nc -w 2 localhost 11211"
 
 # Marker
-alias gpm="cd ~/code/marker/rails"
+alias gpm="cd ~/code/marker/marker-web"
 alias grn="cd ~/code/marker/react-native"
 alias gpd="cd /Volumes/marker/dashing"
 alias gmapi="cd /Volumes/marker/marker-api"
