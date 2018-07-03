@@ -1,6 +1,7 @@
 [user]
   email = jormon@gmail.com
   name = Jordan Moncharmont
+  signingkey = 7D214A1F48B0CAF9
 [init]
   templatedir = ~/.git_template
 [push]
@@ -30,6 +31,7 @@
   ff = only
 [commit]
   template = ~/.gitmessage
+  gpgsign = true
 [fetch]
   prune = true
 [rebase]
@@ -45,3 +47,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[gpg]
+  program = gpg
