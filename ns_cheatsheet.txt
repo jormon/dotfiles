@@ -1,20 +1,13 @@
 bi - Vendor Bill
-cam - Campaign
 cash - Cash Sale
 con - Contact
 cus - Customer
-dash - Dashboard
 emp - Employee
 est - Estimate
-ev - Event
 exp - Expense Report
 fi - File
 invo - Invoice
-iss - Issue
 it - Item
-opp - Opportunity
-par - Partner
-ph - Phone Call
 sa - Sales Order
 se - Saved Searches
 ven - Vendor
