@@ -62,11 +62,13 @@ alias gkkd="cd ~/code/kuli-kuli/kulikuli-dashing/"
 alias gkks="cd ~/code/kuli-kuli/kulikuli-spree/"
 alias gkt="cd /Users/jormon/code/kuli-kuli/turns"
 alias gkdv="cd /Users/jormon/code/kuli-kuli/data-vortex"
+alias gkns="cd /Users/jormon/code/kuli-kuli/netsuite-scripts"
+alias gkgs="cd /Users/jormon/code/kuli-kuli/gsuite_api"
 alias gphm="git push heroku master"
 alias h="heroku"
 alias kprodc="h run -a kulikulifoods rails c production"
 alias stagec="h run -a kulikuli-staging rails c staging"
-alias bocheck="h run -a kulikulifoods rake backorders:count"
+
 # make a random password
 alias pass="openssl rand -base64 32"
 
