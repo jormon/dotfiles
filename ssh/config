@@ -17,3 +17,7 @@ User kulikuliblog
 
 Host stanford
 Hostname xenon.stanford.edu
+
+Host data
+Hostname data.kulikulifoods.com
+User kulikulidata
