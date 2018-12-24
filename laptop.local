@@ -10,6 +10,7 @@ brew "translate-shell"
 brew "youtube-dl"
 brew "jq"
 brew "heroku/brew/heroku"
+brew "pinentry-mac"
 EOF
 
 gem_install_or_update bundler
