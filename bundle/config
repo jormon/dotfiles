@@ -1,8 +1,7 @@
 ---
 BUNDLE_BUILD__PG: "--with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config"
-BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
 #BUNDLE_GITHUB__HTTPS: "true"
-BUNDLE_JOBS: "7"
+BUNDLE_JOBS: "11"
 BUNDLE_GEM__TEST: "rspec"
 BUNDLE_GEM__MIT: "false"
 BUNDLE_GEM__COC: "false"
