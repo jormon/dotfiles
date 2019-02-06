@@ -1,5 +1,4 @@
 ---
-BUNDLE_BUILD__PG: "--with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config"
 #BUNDLE_GITHUB__HTTPS: "true"
 BUNDLE_JOBS: "11"
 BUNDLE_GEM__TEST: "rspec"
