@@ -42,4 +42,3 @@ _load_settings "$HOME/.zsh/configs"
 
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
-export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
