@@ -5,4 +5,5 @@ tags
 /node_modules/
 /tmp
 /coverage
-/public/stores.geojson
+public/stores.geojson
+public/walmart_stores.geojson
