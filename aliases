@@ -26,6 +26,7 @@ alias gsse="cd ~/playground/spree_simple_export"
 alias gss="cd ~/playground/spree-subscribe"
 alias gtail="cd ~/playground/gltail"
 alias gios="cd /Users/jormon/code/ios"
+alias gchal="cd /Users/jormon/code/challenge"
 alias proxy="ssh -D 8080 harlequinduck.dreamhost.com"
 alias tpb="tsocks pianobar"
 alias bers="bundle exec rspec spec/"
@@ -58,6 +59,7 @@ alias gsi="cd /Users/jormon/code/soundable-ios"
 
 # other stuff!
 alias gk="cd ~/code/kuli-kuli/kuli-kuli-web/"
+alias gksol="cd ~/code/kuli-kuli/kuli-kuli-solidus/"
 alias gkkd="cd ~/code/kuli-kuli/kulikuli-dashing/"
 alias gkks="cd ~/code/kuli-kuli/kulikuli-spree/"
 alias gks="cd ~/code/kuli-kuli/kulikuli-smashing/"
@@ -67,7 +69,7 @@ alias gkns="cd /Users/jormon/code/kuli-kuli/netsuite-scripts"
 alias gkgs="cd /Users/jormon/code/kuli-kuli/gsuite_api"
 alias gphm="git push heroku master"
 alias h="heroku"
-alias kprodc="h run -a kulikulifoods rails c production"
+alias kprodc="h run -a kulikulifoods rails c"
 alias stagec="h run -a kulikuli-staging rails c staging"
 
 # make a random password
@@ -75,7 +77,7 @@ alias pass="openssl rand -base64 32"
 
 alias sql="psql -h 127.0.0.1 -p 5432 postgres postgres"
 
-alias kkb_pg_pull="h pg:pull -a kulikuli-staging HEROKU_POSTGRESQL_ROSE kulikuli_staging"
+alias kkb_pg_pull="h pg:pull -a kulikuli-staging HEROKU_POSTGRESQL_ORANGE kulikuli_staging"
 alias kkb_pg_pull_prod="time h pg:pull -a kulikulifoods HEROKU_POSTGRESQL_WHITE kulikuli_staging"
 alias mp_pg_pull="dropdb places_dev && h pg:pull -a marker-production HEROKU_POSTGRESQL_COBALT places_dev"
 alias ms_pg_pull="dropdb places_dev && h pg:pull -a marker-sandbox HEROKU_POSTGRESQL_CYAN places_dev"
@@ -95,11 +97,12 @@ alias kdump="pg_dump -C -O kulikuli_staging > tmp/kk_alias.dump"
 alias krdump="dropdb kulikuli_staging && createdb kulikuli_staging && time psql kulikuli_staging < tmp/kk_alias.dump"
 
 # kk staging database push
-alias kstagedb="h pg:push -a kulikuli-staging kulikuli_staging HEROKU_POSTGRESQL_ROSE"
+alias kstagedb="h pg:push -a kulikuli-staging kulikuli_staging HEROKU_POSTGRESQL_ORANGE"
 
 # kk log tailing
 alias kplog="h logs -t -a kulikulifoods"
 alias kslog="h logs -t -a kulikuli-staging"
+alias kdvlog="h logs -t -a data-vortex"
 
 # marker log tailing
 alias mplog="h logs -t -a marker-production"
