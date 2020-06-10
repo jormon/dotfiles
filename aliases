@@ -11,6 +11,10 @@ alias s="rspec"
 # Pretty print the path
 alias path="echo $PATH | tr -s ":" "\n""
 
+# cheats
+#alias atom="code"
+# fix gpgg: in non tmux: gpgconf --kill gpg-agent
+
 # JM imported
 alias ann="annotate"
 alias gc="cd ~/code"
@@ -27,6 +31,7 @@ alias gss="cd ~/playground/spree-subscribe"
 alias gtail="cd ~/playground/gltail"
 alias gios="cd /Users/jormon/code/ios"
 alias gchal="cd /Users/jormon/code/challenge"
+alias gpel="cd /Users/jormon/code/peloton_api"
 alias proxy="ssh -D 8080 harlequinduck.dreamhost.com"
 alias tpb="tsocks pianobar"
 alias bers="bundle exec rspec spec/"
@@ -108,7 +113,7 @@ alias kdvlog="h logs -t -a data-vortex"
 alias mplog="h logs -t -a marker-production"
 alias mslog="h logs -t -a marker-sandbox"
 alias mdlog="h logs -t -a marker-dashing"
-alias bo="EDITOR=atom bundle open"
+alias bo="EDITOR=code bundle open"
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
