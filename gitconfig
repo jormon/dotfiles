@@ -50,3 +50,5 @@
 	required = true
 [gpg]
   program = gpg
+[pull]
+	ff = only
