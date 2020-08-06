@@ -5,7 +5,7 @@ branch_name = `git rev-parse --abbrev-ref HEAD`.chomp
 base_branch = if branch_name.include? "--"
   branch_name.split("--").first.gsub /\A@/, ""
 else
-  "master"
+  `git confit --get init.defaultBranch`
 end
 
 system("git co #{base_branch}") &&

@@ -2,15 +2,16 @@
 
 
 branch_name=`git rev-parse --abbrev-ref HEAD`.chomp
+default_branch = `git config --get init.defaultBranch`
 
-if branch_name == "master"
-  warn "Cannot hpr from master!!!"
+if branch_name == default_branch
+  warn "Cannot hpr from the default branch (#{default_branch})!!!"
   exit 1
 end
 
 base = if branch_name.include? "--"
   parts = branch_name.split "--"
-  raise "DUMBASS take out some dashes" if parts.count > 2
+  raise "HAH: take out some dashes" if parts.count > 2
   parts[0]
 end
 

@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 if `git fetch`
+  default_branch = `git config --get init.defaultBranch`
   if ARGV[0] == "-i"
-    system "git rebase -i origin/master"
+    system "git rebase -i origin/#{default_branch}"
   else
-    `git rebase origin/master`
+    `git rebase origin/#{default_branch}`
   end
 end

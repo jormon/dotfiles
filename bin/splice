@@ -5,6 +5,8 @@ set -x
 
 commit_to_cherry=`git rev-parse HEAD`
 
+default_branch=`git config --get init.defaultBranch`
+
 git reset --hard HEAD^
-git co -b $1 master
+git co -b $1 $default_branch
 git cherry-pick $commit_to_cherry

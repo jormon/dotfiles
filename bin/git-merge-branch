@@ -3,12 +3,13 @@
 set -e
 
 git fetch origin
-line_count=$(git diff origin/master..master | wc -l)
+default_branch=$(git config --get init.defaultBranch)
+line_count=$(git diff origin/${default_branch}..${default_branch} | wc -l)
 
 if [ $line_count -gt 0 ]; then
-  printf "failed: master is not up to date with origin/master\n"
+  printf "failed: ${default_branch} is not up to date with origin/${default_branch}\n"
   exit 1
 fi
 
-git checkout master
+git checkout $default_branch
 git merge "@{-1}"
