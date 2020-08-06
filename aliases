@@ -15,6 +15,10 @@ alias path="echo $PATH | tr -s ":" "\n""
 #alias atom="code"
 # fix gpgg: in non tmux: gpgconf --kill gpg-agent
 
+# fix hub and hpr to operate against a default branch set on github
+# https://github.com/github/hub/issues/154
+alias fixgitmain="git remote set-head origin -a"
+
 # JM imported
 alias ann="annotate"
 alias gc="cd ~/code"
