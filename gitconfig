@@ -4,7 +4,7 @@
   signingkey = 7D214A1F48B0CAF9
 [init]
   templatedir = ~/.git_template
-  defaultBranch = master
+	defaultBranch = main
 [push]
   default = upstream
 [color]
