@@ -45,7 +45,7 @@ alias be="bundle exec"
 alias bec="bundle exec cap"
 alias killdns="sudo killall -HUP mDNSResponder"
 alias gemset="echo `basename $PWD` > .ruby-gemset"
-alias fixsshkey="ssh-add -A"
+alias fixsshkey="ssh-add -A; killall gpg-agent"
 alias mc_clear="echo 'flush_all' | nc -w 2 localhost 11211"
 
 # Marker
